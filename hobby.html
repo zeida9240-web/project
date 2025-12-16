@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML5 with Hanbit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+    }
+    a { text-decoration: none; }
+    img { border: 0; }
+    li { list-style: none; }
+    </style>
+    <!-- 공통 -->
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <!-- 헤더 -->
+    <style>
+        #main-header {
+            padding: 10px 5px;
+        }
+        #main-header h1 {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+        #main-header ul {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #main-header li a {
+            color: #555;
+        }
+        #main-header li.active a {
+            color: black;
+            font-weight: 500;
+        }#main-header label {
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+
+        #checkbox {
+            display: none;
+        }
+        #checkbox + nav {
+            display: block;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+        #main-content {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500;
+        }
+        #main-content {
+            color: #222;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Malgun Gothic, sans-serif; 
+        }
+        .colored-bg {
+            background-color: #F5F5F5; 
+            padding: 15px; 
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Batang', '바탕', 'Times New Roman', Times, serif; 
+            font-size: 16px; 
+            line-height: 1.6; 
+        }
+    </style>
+    <style>
+    .image-layout {
+        display: flex;     
+        align-items: center;
+        gap: 30px;           
+       margin-top: 20px;    
+    }
+    .left-group {
+        display: flex; 
+        flex-direction: column; 
+    }
+    .left-group img {
+    margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+    <audio autoplay loop hidden>
+    <source src="hobby.mp3" type="audio/mpeg">
+    </audio>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Menu</a></h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="like.html">like</a></li>
+                    <li class="active"><a href="hobby.html">hobby</a></li>
+                    <li><a href="wishlist.html">wish list</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Hobby</h1>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <div class="colored-bg">
+            <p>CD 수집 & 레코드샵 탐방 💿</p>
+            <p>저는 다양한 장르의 CD를 수집하는 것을 좋아합니다.</p>
+            <p>레코드샵을 방문하여 다양한 앨범을 구경하는 취미가 있습니다.</p>
+            </div>
+            <div class="image-layout">
+                <div class="left-group">
+                    <img src="cd.jpg" width="250"><br>
+                    <img src="hobby1.jpg" width="250">
+                </div>
+            <img src="hobby.jpg" width="250">
+            </div>
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>Copyright 2025. MiYeon Kim. All rights reserved./div>
+        </footer>
+    </div>
+</body>
+</html>
